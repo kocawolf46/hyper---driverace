@@ -68,3 +68,54 @@ Kamera: Yumuşatılmış takip kamerası (lerp)
 Masaüstü kısayolu: index.html dosyasına sağ tıklayın → Bir kısayol oluştur → kısayolu masaüstüne taşıyın. Artık simgeye tıklayarak oyunu direkt açabilirsiniz. 🏁
 
 İyi yarışlar! 💨
+
+HYPERDRIVE ARABA YARISI - BILGISAYARDA CALISTIRMA KILAVUZU
+
+GEREKSINIMLER
+
+Bilgisayarinizda Node.js programi kurulu olmalidir.
+Eger kurulu degilse https://nodejs.org adresine giderek yesil renkli LTS surumunu indirip kurun.
+CALISTIRMA ADIMLARI
+
+Adim 1: Komut Satirini (Terminal) Acin
+
+Windows kullaniyorsaniz proje klasorunun icine girin. Ustteki adres cubuguna cmd yazip Enter tusuna basin.
+Mac veya Linux kullaniyorsaniz Terminal uygulamasini acin ve "cd klasor_yolu" komutu ile proje klasorune gidin.
+Adim 2: Kutuphaneleri Yukleyin
+Terminal ekranina su komutu yazip Enter'a basin:
+npm install
+
+Bu islem oyunun ihtiyaci olan React, Three.js, Zustand ve diger paketleri otomatik olarak indirecektir. Islem yaklasik 1-2 dakika surebilir.
+
+Adim 3: Oyunu Baslatin
+Paketler yuklendikten sonra ayni terminal ekranina su komutu yazin:
+npm run dev
+
+Ekranda sunucu baglantisi belirecektir (genellikle http://localhost:5173).
+
+Adim 4: Tarayicida Oynayin
+Chrome, Edge, Opera veya Firefox tarayicinizi acin.
+Adres cubuguna su adresi yazip Enter'a basin:
+http://localhost:5173
+
+Oyun ana menusu acilacaktir. "YARISA BASLA" butonuna basarak oynayabilirsiniz.
+
+ALTERNATIF YONTEM (TEK DOSYA HALINDE CALISTIRMA)
+Eger oyunu internet baglantisi olmadan, sadece cift tiklayarak tek bir HTML dosyasi uzerinden acmak isterseniz:
+
+Terminale "npm run build" yazip Enter'a basin.
+Proje icinde olusan "dist" klasorune gidin.
+"index.html" dosyasina cift tiklayarak oyunu dogrudan tarayicinizda calistirin.
+OYUN KONTROLLERI
+
+W veya Yukari Ok: Gaz (Ileri gitme)
+S veya Asagi Ok: Fren ve Geri vites
+A veya Sol Ok: Sola donus
+D veya Sag Ok: Saga donus
+Shift veya N tusu: Nitro Boost (Yuksek hiz ve alev efekti)
+Q ve E tuslari: Boyut degistirme (Pist, arac ve evren temalarini degistirir)
+ESC tusu: Oyunu duraklat / Devam et
+
+
+
+
